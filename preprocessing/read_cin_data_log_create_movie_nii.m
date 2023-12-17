@@ -2,14 +2,16 @@
 
 clear all;clc;close all;
 
-data_dir = 'D:\My Drive\madhu-01x20x2023\';
+Folder = cd;
+data_dir = fullfile(cd, 'data');
 
-data_name = [data_dir '555-250418-134419.cin'];
+data_name = fullfile(data_dir, '555-250418-134419.cin');
+log_file_name = fullfile(data_dir, '2018-04-25-132902.log');
+
 
 data = fileread(data_name);
 disp('finish reading cin file')
 
-%%
 % the original data is 2048x384xnumber of frames; most of it is empty space so we crop it to 1100x384 x number of frames
 row_bytes = 2048;
 num_rows = 384;
@@ -18,7 +20,7 @@ cropped_row_bytes = 1100;
 iso_xyz_resolution = 0.025; %0.025 mm, this is ideal for visualization. Can be chosen a larger value i.e., 0.05 mm to make volumes fit into memory
 
 %%
-log_file_name = [data_dir '2018-04-25-132902.log'];
+
 log_file = fileread(log_file_name);
 x_spacing_end = regexp(log_file, 'x_spacing = ','end');
 y_spacing_start = regexp(log_file, 'y_spacing = ');

@@ -1,0 +1,12 @@
+[EyeScan]
+date = 2018-04-25-132902
+eye = OD
+temporal_position = 22.4279384328
+nasal_position = 35.7900244869
+slices = 1000
+segments = 1
+x_spacing = 0.041825095
+y_spacing = 0.009582712
+z_spacing = 0.0133754615156
+comment = Eye 1, prelaser
+
