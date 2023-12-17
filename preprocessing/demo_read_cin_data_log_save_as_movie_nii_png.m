@@ -3,10 +3,13 @@
 clear all;clc;close all;
 
 % Example usage:
-dataDir = 'C:\Users\axm1287\Downloads\3D-UBM\data';
-dataName = fullfile(dataDir, '555-250418-134419.cin');
-logFileName = fullfile(dataDir, '2018-04-25-132902.log');
-outputType = 'nii';
+dataDir = 'C:\Users\axm1287\Downloads\3D-UBM\data\555-250418-134419';
+cinName = '555-250418-134419.cin';
+logName = '2018-04-25-132902.log'
+
+dataName = fullfile(dataDir, cinName);
+logFileName = fullfile(dataDir, logName);
+outputType = 'png';
 
 % Call functions with appropriate arguments
 data = readCinFile(dataName);
@@ -19,6 +22,6 @@ if outputType == 'mp4'
 elseif outputType == 'nii'
     createNifti(dataName, dataVolume, volumeInfo);
 elseif outputType == 'png'
-    createPng(dataName, dataVolume);
+    createPng(cinName, dataDir, dataVolume);
 end
 
