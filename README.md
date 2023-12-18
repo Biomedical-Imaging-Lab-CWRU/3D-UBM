@@ -1,5 +1,5 @@
 # 3D-UBM
- This repository contains code for the 3D-UBM system
+ This repository contains code for the 3D-UBM system.
 
 **To read and convert file**
  <ol>
