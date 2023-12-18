@@ -1,4 +1,10 @@
 # 3D-UBM
- this repository contains code for the 3D-UBM system
+ This repository contains code for the 3D-UBM system
 
-1. To read .cin and .log files and convert them into .nii or mp4 or a stack of .png, run demo_read_cin_data_log_save_as_movie_nii_png.m
+** To read and convert file**
+ <ol>
+ <li> Create a data folder.</li>
+ <li> Put *.cin and associated *.log files under data/folder_name</li>
+ <li> Update dataDir to data/folder_name, cinName to *.cin, and logName to *.log</li>
+ <li> run demo_read_cin_data_log_save_as_movie_nii_png.m</li>
+ </ol>
