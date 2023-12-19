@@ -15,11 +15,11 @@ This repository contains code for the 3D-UBM system
    ```sh
    preprocessing/demo_read_cin_data_log_save_as_movie_nii_png.m
    ```
-3. To convert a MATLAB-created .nii file to Amira-Avizo compatible .nii, run
+2. To convert a MATLAB-created .nii file to Amira-Avizo compatible .nii, run
    ```sh
    preprocessing/demo_nii_volume_amira_compatible.m
    ```
-6. To perform stack alignment, run
+3. To perform stack alignment, run
    ```sh
    preprocessing/demo_stack_alignment.m
    ```
