@@ -14,14 +14,14 @@ function convertToAmiraCompatibleNifti(inputFilePath,volumeInfo)
     vol_info2.MultiplicativeScaling = 0;
     vol_info2.TransformName = 'Qform';
     vol_info2.Transform.T = eye(4);
-    vol_info2.Transform.T(1, 1) = volumeInfo.xSpacing;
-    vol_info2.Transform.T(2, 2) = volumeInfo.ySpacing;
-    vol_info2.Transform.T(3, 3) = volumeInfo.zSpacing;
+    vol_info2.Transform.T(1, 1) = volumeInfo.PixelDimensions(1);
+    vol_info2.Transform.T(2, 2) = volumeInfo.PixelDimensions(2);
+    vol_info2.Transform.T(3, 3) = volumeInfo.PixelDimensions(3);
 
     % Update pixel dimensions
-    vol_info2.PixelDimensions(1) = volumeInfo.xSpacing;
-    vol_info2.PixelDimensions(2) = volumeInfo.ySpacing;
-    vol_info2.PixelDimensions(3) = volumeInfo.zSpacing;
+    vol_info2.PixelDimensions(1) = volumeInfo.PixelDimensions(1);
+    vol_info2.PixelDimensions(2) = volumeInfo.PixelDimensions(2);
+    vol_info2.PixelDimensions(3) = volumeInfo.PixelDimensions(3);
 
     % Set irrelevant fields to 0
     vol_info2.raw.dim(5:end) = 0;
