@@ -5,7 +5,7 @@ clear all;clc;close all;
 % Example usage:
 dataDir = 'C:\Users\axm1287\Downloads\3D-UBM\data\555-250418-134419';
 cinName = '555-250418-134419.cin';
-logName = '2018-04-25-132902.log'
+logName = '2018-04-25-132902.log';
 
 dataName = fullfile(dataDir, cinName);
 logFileName = fullfile(dataDir, logName);
@@ -13,9 +13,12 @@ outputType = 'png';
 
 % Call functions with appropriate arguments
 data = readCinFile(dataName);
-[volumeInfo.xSpacing, volumeInfo.ySpacing, volumeInfo.zSpacing] = readLogFile(logFileName);
+[xSpacing, ySpacing, zSpacing] = readLogFile(logFileName);
 dataVolume = processCinData(data, 2048, 384, 8, 1100);
 
+volumeInfo.PixelDimensions(1)= xSpacing;
+volumeInfo.PixelDimensions(2)= ySpacing;
+volumeInfo.PixelDimensions(3)= zSpacing;
 
 if outputType == 'mp4'
     createVideo(dataName, dataVolume);
