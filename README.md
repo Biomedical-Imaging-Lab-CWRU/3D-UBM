@@ -40,7 +40,7 @@ This repository contains code for the 3D-UBM system. Please cite the following p
 
 Download the repository locally and follow instructions listed in README as well as the codes. The data can be accessed from our lab's server.
 
-### Pre-processing
+### preprocessing
 <em>preprocessing</em> contains files for pre-processing .cin and .log files, converting them to common formats, and align them using transformation diffusion approach.
 
 **To read and convert file**
