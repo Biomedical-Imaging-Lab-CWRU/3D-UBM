@@ -1,6 +1,8 @@
 # 3D-UBM
  This repository contains code for the 3D-UBM system.
 
+ <em>preprocessing</em> contains files for pre-processing .cin and .log files, converting them to common formats, and align them using transformation diffusion approach.
+
 **To read and convert file**
  <ol>
  <li> Create a data folder.</li>
