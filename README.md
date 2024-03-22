@@ -9,4 +9,5 @@
  <li> Put *.cin and associated *.log file under data/folder_name</li>
  <li> Update dataDir to data/folder_name, cinName to *.cin, and logName to *.log</li>
  <li> run demo_read_cin_data_log_save_as_movie_nii_png.m</li>
+ <li> run demo_stack_alignment.m</li>
  </ol>
