@@ -10,7 +10,7 @@
     <li>
       <a href="#instructions">Instructions</a>
         <ul>
-        <li><a href="#preprocessing">Pre-processing</a></li>
+        <li><a href="#preprocessing">Preprocessing</a></li>
         <li><a href="#sdv-gan">SDV-GAN</a></li>
       </ul>
     </li>
@@ -40,7 +40,7 @@ This repository contains code for the 3D-UBM system. Please cite the following p
 
 Download the repository locally and follow instructions listed in README as well as the codes. The data can be accessed from our lab's server.
 
-### preprocessing
+### Preprocessing
 <em>preprocessing</em> contains files for pre-processing .cin and .log files, converting them to common formats, and align them using transformation diffusion approach.
 
 **To read and convert file**
@@ -51,5 +51,9 @@ Download the repository locally and follow instructions listed in README as well
  <li> run demo_read_cin_data_log_save_as_movie_nii_png.m</li>
  <li> run demo_stack_alignment.m</li>
  </ol>
+
+### SDV-GAN
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
