@@ -46,6 +46,11 @@ This repository uses both MATLAB and Python, depending on the need. Please use c
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## Getting Started
+
+Download the repository locally and follow instructions listed in README as well as the codes. The data can be accessed from our lab's local server.
+
+
 <em>preprocessing</em> contains files for pre-processing .cin and .log files, converting them to common formats, and align them using transformation diffusion approach.
 
 **To read and convert file**
