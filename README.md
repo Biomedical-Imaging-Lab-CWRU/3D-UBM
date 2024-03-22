@@ -6,21 +6,10 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#instructions">Instructions</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -39,16 +28,13 @@ This repository contains code for the 3D-UBM system. Please cite the following p
 <li> Richard W. Helms, Ahmed Tahseen Minhaz, David L. Wilson, Faruk H. Örge; Clinical 3D Imaging of the Anterior Segment With Ultrasound Biomicroscopy. Trans. Vis. Sci. Tech. 2021;10(3):11. https://doi.org/10.1167/tvst.10.3.11.</li>
 </ol>
 
-### Built With
-
-This repository uses both MATLAB and Python, depending on the need. Please use carefully.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Getting Started
+## Instructions
 
-Download the repository locally and follow instructions listed in README as well as the codes. The data can be accessed from our lab's local server.
+Download the repository locally and follow instructions listed in README as well as the codes. The data can be accessed from our lab's server.
 
 
 <em>preprocessing</em> contains files for pre-processing .cin and .log files, converting them to common formats, and align them using transformation diffusion approach.
