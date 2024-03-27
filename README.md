@@ -81,7 +81,7 @@ Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high
     ```bash
     python deconv_GAN_train_XXX.py
     ```
-2. **Testing**: Run `test.py` script to evaluate the trained model on a separate validation dataset and compute evaluation metrics.
+2. **Testing**: Run `deconv_GAN_test_XXX.py` script to evaluate the trained model on a separate validation dataset and compute evaluation metrics.
     ```bash
     python deconv_GAN_test_XXX.py
     ```
@@ -101,6 +101,7 @@ The UBM image dataset used for training and validation should be organized in a 
 ### References
 
 - Paper: [Pix2Pix: Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)
+- Paper: [3D ultrasound biomicroscopy image enhancement using generative adversarial networks]
 - Documentation: TensorFlow, NumPy, scikit-image
 
 
