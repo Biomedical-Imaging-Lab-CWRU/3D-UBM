@@ -59,11 +59,11 @@ This project focuses on enhancing 3D Ultrasound Biomicroscopy (UBM) images using
 
 ### Overview
 
-Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high-resolution imaging of the eye's anterior segment. However, UBM images often suffer from noise and lack of clarity, which can hinder accurate analysis and diagnosis. This project aims to enhance the quality of UBM images using deep learning techniques.
+Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high-resolution imaging of the eye's anterior segment. However, UBM images often suffer from blurring due to varying point-spread-function of ultrasound systems. This project aims to enhance the quality of UBM images using deep learning techniques.
 
 ### Features
 
-- **Pix2Pix GAN Architecture**: Utilizes the Pix2Pix architecture, which learns a mapping from an input image (noisy UBM image) to an output image (enhanced UBM image).
+- **SDV-GAN GAN Architecture**: Utilizes the Pix2Pix architecture, which learns a mapping from an input image (noisy UBM image) to an output image (enhanced UBM image).
 - **Residual Blocks**: Integrates residual blocks into the generator model to facilitate better gradient flow and faster convergence during training.
 - **Attention Gates**: Incorporates attention gates into the decoder blocks of the generator to selectively focus on relevant image features, improving the quality of the generated images.
 - **Training and Evaluation**: Provides scripts for training the model using UBM image datasets and evaluating the performance using evaluation metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), and Multi-Scale SSIM (MS-SSIM).
@@ -71,19 +71,19 @@ Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high
 
 ### Python Files
 
-- **train.py**: Script for training the Pix2Pix GAN model using UBM image datasets.
-- **test.py**: Script for evaluating the trained model on a separate validation dataset and computing evaluation metrics.
-- **utils.py**: Contains utility functions used for data loading, model construction, and evaluation.
+- **deconv_GAN_train_XXX.py**: Script for training the SDV-GAN model under various network conditions using UBM image datasets.
+- **deconv_GAN_test_XXX.py**: Script for evaluating the trained model on a separate validation dataset and computing evaluation metrics.
+- **evaluation.ipynb**: Contains functions for evaluating the model performance on test set.
 
 ### Usage
 
-1. **Training**: Run `train.py` script to train the Pix2Pix GAN model using the provided UBM image dataset.
+1. **Training**: Run `deconv_GAN_train_XXX.py` script to train the SDV-GAN GAN model using the provided UBM image dataset. The code asssumes dataset and saved models are stored in a specific directory. Please check code for details.
     ```bash
-    python train.py --dataset_path /path/to/train_dataset --val_dataset_path /path/to/val_dataset
+    python deconv_GAN_train_XXX.py
     ```
 2. **Testing**: Run `test.py` script to evaluate the trained model on a separate validation dataset and compute evaluation metrics.
     ```bash
-    python test.py --dataset_path /path/to/test_dataset --model_path /path/to/trained_model
+    python deconv_GAN_test_XXX.py
     ```
 
 ### Dependencies
@@ -96,7 +96,7 @@ Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high
 
 ### Dataset
 
-The UBM image dataset used for training and validation should be organized in a structured format where each image is paired with its corresponding enhanced version.
+The UBM image dataset used for training and validation should be organized in a structured format where each image is paired with its corresponding enhanced version. Please see the files in our lab server.
 
 ### References
 
