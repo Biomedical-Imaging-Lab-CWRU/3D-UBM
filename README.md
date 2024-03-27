@@ -63,7 +63,7 @@ Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high
 
 ### Features
 
-- **SDV-GAN GAN Architecture**: Utilizes the Pix2Pix architecture, which learns a mapping from an input image (noisy UBM image) to an output image (enhanced UBM image).
+- **SDV-GAN Architecture**: Utilizes the Pix2Pix architecture, which learns a mapping from an input image (noisy UBM image) to an output image (enhanced UBM image).
 - **Residual Blocks**: Integrates residual blocks into the generator model to facilitate better gradient flow and faster convergence during training.
 - **Attention Gates**: Incorporates attention gates into the decoder blocks of the generator to selectively focus on relevant image features, improving the quality of the generated images.
 - **Training and Evaluation**: Provides scripts for training the model using UBM image datasets and evaluating the performance using evaluation metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), and Multi-Scale SSIM (MS-SSIM).
@@ -77,7 +77,7 @@ Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high
 
 ### Usage
 
-1. **Training**: Run `deconv_GAN_train_XXX.py` script to train the SDV-GAN GAN model using the provided UBM image dataset. The code asssumes dataset and saved models are stored in a specific directory. Please check code for details.
+1. **Training**: Run `deconv_GAN_train_XXX.py` script to train the SDV-GAN model using the provided UBM image dataset. The code asssumes dataset and saved models are stored in a specific directory. Please check code for details.
     ```bash
     python deconv_GAN_train_XXX.py
     ```
