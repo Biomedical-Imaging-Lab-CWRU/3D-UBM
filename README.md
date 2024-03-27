@@ -108,7 +108,7 @@ The UBM image dataset used for training and validation should be organized in a 
 ## Ciliary Body Segmentation
 
 ### Overview:
-The MATLAB scripts provided in this folder are designed for training and evaluating semantic segmentation models using the DeepLabv3+ architecture. These scripts are intended for binary and multi-class segmentation tasks on 3D-UBM images. Please read the [paper] (https://doi.org/10.1167/tvst.11.10.3) first.
+The MATLAB scripts provided in this folder are designed for training and evaluating semantic segmentation models using the DeepLabv3+ architecture. These scripts are intended for binary and multi-class segmentation tasks on 3D-UBM images. Please read the [paper](https://doi.org/10.1167/tvst.11.10.3) first.
 
 ### List of Scripts:
 1. `deeplab_cb_2_class_XXX_YYY_ZZZ.m`: This script trains a DeepLabv3+ model for binary semantic segmentation on 3D-UBM images, segmenting images into two classes: "CB" (ciliary body) and "background". XXX indicates enface or radial. YYY indicates 2D or 2.5D. ZZZ indicates dice loss or cross-entropy loss.
@@ -143,7 +143,7 @@ The MATLAB scripts provided in this folder are designed for training and evaluat
 3. Visualize results of all files using `visualization_images*.m`
 
 ## Acknowledgements:
-These scripts leverage MATLAB's Image Processing Toolbox and Deep Learning Toolbox for image processing and deep learning tasks. The DeepLabv3+ architecture is implemented using MATLAB's built-in functions. The code also requires [natsortfiles] (https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort) toolbox for natural sorting.
+These scripts leverage MATLAB's Image Processing Toolbox and Deep Learning Toolbox for image processing and deep learning tasks. The DeepLabv3+ architecture is implemented using MATLAB's built-in functions. The code also requires [natsortfiles](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort) toolbox for natural sorting.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
