@@ -13,7 +13,6 @@
         <li><a href="#preprocessing">Preprocessing</a></li>
         <li><a href="#sdv-gan">SDV-GAN</a></li>
         <li><a href="#ciliary-body-segmentation">Ciliary Body Segmentation</a></li>
-
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
