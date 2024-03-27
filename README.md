@@ -40,7 +40,7 @@ This repository contains code for the 3D-UBM system. Please cite the following p
 
 Download the repository locally and follow instructions listed in README as well as the codes. The data can be accessed from our lab's server.
 
-### Preprocessing
+## Preprocessing
 <em>preprocessing</em> contains files for pre-processing .cin and .log files, converting them to common formats, and align them using transformation diffusion approach.
 
 **To read and convert file**
@@ -52,16 +52,16 @@ Download the repository locally and follow instructions listed in README as well
  <li> run demo_stack_alignment.m</li>
  </ol>
 
-### SDV-GAN
-# Ultrasound Biomicroscopy (UBM) Image Enhancement using Pix2Pix GAN with Residual Blocks and Attention Gates
+## SDV-GAN
+## 3D Ultrasound Biomicroscopy (3D-UBM) Image Enhancement using Spatially varying Deconvolution GAN (SDV-GAN)
 
-This project focuses on enhancing Ultrasound Biomicroscopy (UBM) images using a Pix2Pix Generative Adversarial Network (GAN) architecture equipped with residual blocks and attention gates.
+This project focuses on enhancing 3D Ultrasound Biomicroscopy (UBM) images using a custom Generative Adversarial Network (GAN) architecture equipped with residual blocks and attention gates.
 
-## Overview
+### Overview
 
 Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high-resolution imaging of the eye's anterior segment. However, UBM images often suffer from noise and lack of clarity, which can hinder accurate analysis and diagnosis. This project aims to enhance the quality of UBM images using deep learning techniques.
 
-## Features
+### Features
 
 - **Pix2Pix GAN Architecture**: Utilizes the Pix2Pix architecture, which learns a mapping from an input image (noisy UBM image) to an output image (enhanced UBM image).
 - **Residual Blocks**: Integrates residual blocks into the generator model to facilitate better gradient flow and faster convergence during training.
@@ -69,13 +69,13 @@ Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high
 - **Training and Evaluation**: Provides scripts for training the model using UBM image datasets and evaluating the performance using evaluation metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), and Multi-Scale SSIM (MS-SSIM).
 - **Visualization**: Generates plots showcasing the model's performance over training epochs and saves the best-performing model for future use.
 
-## Python Files
+### Python Files
 
 - **train.py**: Script for training the Pix2Pix GAN model using UBM image datasets.
 - **test.py**: Script for evaluating the trained model on a separate validation dataset and computing evaluation metrics.
 - **utils.py**: Contains utility functions used for data loading, model construction, and evaluation.
 
-## Usage
+### Usage
 
 1. **Training**: Run `train.py` script to train the Pix2Pix GAN model using the provided UBM image dataset.
     ```bash
@@ -86,19 +86,19 @@ Ultrasound Biomicroscopy (UBM) is a non-invasive imaging technique used for high
     python test.py --dataset_path /path/to/test_dataset --model_path /path/to/trained_model
     ```
 
-## Dependencies
+### Dependencies
 
-- Python 3.x
-- TensorFlow 2.x
+- Python 3.9.18
+- TensorFlow 2.6
 - NumPy
 - scikit-image
 - Matplotlib
 
-## Dataset
+### Dataset
 
 The UBM image dataset used for training and validation should be organized in a structured format where each image is paired with its corresponding enhanced version.
 
-## References
+### References
 
 - Paper: [Pix2Pix: Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)
 - Documentation: TensorFlow, NumPy, scikit-image
