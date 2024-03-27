@@ -118,7 +118,7 @@ The MATLAB scripts provided in this folder are designed for training and evaluat
 
 3. `evaluation_2_class_*.m` and `evaluation_3_class_*.m`: This script evaluates the performance of the trained segmentation models. It computes various performance metrics such as Accuracy, Sensitivity, Specificity, Precision, and F1-score on a per-volume basis.
 
-## Usage:
+### Usage:
 1. **Data Preparation:**
    - Organize your image and ground truth (GT) data into appropriate directories.
    - Ensure that images and GT data are correctly named and correspond to each other.
@@ -132,18 +132,18 @@ The MATLAB scripts provided in this folder are designed for training and evaluat
    - Update the directories for images, GT data, and segmentation results in the evaluation script (`evaluation_*.m`).
    - Run the evaluation script to compute performance metrics for the trained models.
 
-## Additional Notes:
+### Additional Notes:
 - Ensure that necessary MATLAB toolboxes (e.g., Image Processing Toolbox, Deep Learning Toolbox) are installed and configured.
 - GPU support is utilized for faster training; make sure a compatible GPU and CUDA toolkit are available.
 - Adjust paths, network architecture, and training parameters according to your dataset and requirements.
 - Customize evaluation metrics or add additional evaluation methods as needed.
 
-## Example Workflow:
+### Example Workflow:
 1. Train the desired segmentation model using `deeplab_cb_2_class.m` or `deeplab_cb_3_class.m`.
 2. Evaluate the trained model using `evaluation_2_class_enface.m` or `evaluation_3_class_enface.m`.
 3. Visualize results of all files using `visualization_images*.m`
 
-## Acknowledgements:
+### Acknowledgements:
 These scripts leverage MATLAB's Image Processing Toolbox and Deep Learning Toolbox for image processing and deep learning tasks. The DeepLabv3+ architecture is implemented using MATLAB's built-in functions. The code also requires [natsortfiles](https://www.mathworks.com/matlabcentral/fileexchange/47434-natural-order-filename-sort) toolbox for natural sorting.
 
 
